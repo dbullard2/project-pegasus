@@ -8,13 +8,11 @@ public class controller : MonoBehaviour {
     }
 
     void FixedUpdate() {
-      if(Input.GetKey("right")){
-        Debug.Log("hi");
+      if(Input.GetKey("right") || Input.GetKey("d")){
         transform.Translate(Vector3.right * Time.deltaTime);
       }
 
-      if(Input.GetKey("left")){
-        Debug.Log("bye");
+      if(Input.GetKey("left") || Input.GetKey("a")){
         transform.Translate(Vector3.left * Time.deltaTime);
       }
     }
